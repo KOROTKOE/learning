@@ -7,10 +7,7 @@ export default (props) =>{
 
     const newPostElement = React.createRef();
 
-    const addPost = () =>{
-        let text = newPostElement.current.value;
-        alert(text)
-    }
+    const addPost = () => props.addPost(newPostElement.current.value)
 
     return <div className={s.postsBlock}>
         <h3>My posts</h3>

@@ -7,7 +7,7 @@ import Profile from "./components/Profile/Profile";
 
 function App(props) {
     const DialogRender = () => <Dialogs state={props.appState.dialogsPage}/>;
-    const ProfileRender = () => <Profile state={props.appState.profilePage} />;
+    const ProfileRender = () => <Profile state={props.appState.profilePage}  addPost={props.addPost}/>;
     return (
         <BrowserRouter>
         <div className="app-wrapper">
